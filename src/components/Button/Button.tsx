@@ -18,7 +18,7 @@ export interface ButtonProps {
 	/** If true, the button will be displayed without a background or border */
 	textOnly?: boolean
 	/** The variant of the button */
-	variant?: 'primary' | 'secondary' | 'standard' | 'danger'
+	variant?: 'primary' | 'secondary' | 'danger'
 }
 /**
  * Primary UI component for user interaction
@@ -32,7 +32,7 @@ const Button = (props: ButtonProps) => {
 		onClick,
 		size = 'medium',
 		textOnly = false,
-		variant = 'standard',
+		variant = 'primary',
 		...rest
 	} = props
 
